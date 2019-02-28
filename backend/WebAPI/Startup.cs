@@ -90,13 +90,13 @@ namespace WebAPI
             app.UseAuthentication();
             app.UseCors("CorsPolicy");
             app.UseMvc();
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pathfinder API V1");
-                c.DocumentTitle = "Doc";
-                c.DocExpansion(DocExpansion.None);
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pathfinder API V1");
+            //    c.DocumentTitle = "Doc";
+            //    c.DocExpansion(DocExpansion.None);
+            //});
         }
     }
 }
