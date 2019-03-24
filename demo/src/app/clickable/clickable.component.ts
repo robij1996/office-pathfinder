@@ -3,7 +3,7 @@ import { Subscription } from 'rxjs';
 import { MsgSrv } from '../msg-srv.component'
 
 @Component({
-  selector: 'app-clickable',
+  selector: '.app-clickable',
   templateUrl: './clickable.component.html',
   styleUrls: ['./clickable.component.css']
 })
