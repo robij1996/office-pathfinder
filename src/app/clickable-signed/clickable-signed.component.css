@@ -1,0 +1,9 @@
+.st4 {
+    fill: rgb(94, 94, 94);
+    stroke: rgb(0, 0, 0);
+    stroke-miterlimit: 10;
+}
+
+.selected {
+    fill: rgb(229, 255, 0);
+}
