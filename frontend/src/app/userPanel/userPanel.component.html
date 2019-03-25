@@ -1,0 +1,7 @@
+<label for="basic-url">Wyszukiwarka</label>
+<div class="input-group mb-3">
+    <input #searchPlace type="text" class="form-control" placeholder="Check me how im working! :D"  >
+    <div class="input-group-append">
+      <button class="btn btn-sm" type="button" id="button-addon2" (click)="searchFunction(searchPlace.value); searchPlace.value ='' ">Search</button>
+    </div>
+  </div>

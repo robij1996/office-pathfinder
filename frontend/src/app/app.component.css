@@ -1,10 +1,8 @@
-.panel-heading{
-    font-size: 30px;
-    font-weight: 900;
-    font-family: Consolas, "Times New Roman", Times, serif;
-    text-align: center;
+h3{
+    background-color: #17a2b8;
+    padding: 10px;
 }
-
-.btn-default{
-    width:100px
+.container{
+    background-color: grey;
+    text-align: center;
 }

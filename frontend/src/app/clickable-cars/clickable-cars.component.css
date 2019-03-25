@@ -1,0 +1,14 @@
+#cars{
+cursor: pointer;
+}
+
+.st4 {
+    fill: orange;
+    stroke: red;
+    stroke-miterlimit: 10;
+  }
+  
+  .hollymolly {
+    fill: green;
+  }
+  
