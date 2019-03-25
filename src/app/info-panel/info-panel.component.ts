@@ -14,8 +14,9 @@ export class InfoPanelComponent implements OnInit {
   objectSub: Subscription;
 
   constructor(private clickableService: ClickableService) {
-
-   }
+    this.objectSub = clickableService.getClickableID().subscribe(id => { this.objectID = id; });
+    this.objectSub = clickableService.getClickableType().subscribe(type => { this.objectType = type; });
+  }
 
   ngOnInit() {
   }
