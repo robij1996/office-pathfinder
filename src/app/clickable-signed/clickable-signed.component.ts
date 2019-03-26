@@ -25,11 +25,7 @@ export class ClickableSignedComponent implements OnDestroy {
   onClick(event: Event) {
 
     if (this.objectID) {    // remove selection
-      const elements = document.getElementsByClassName('selected');
-      for (let i = 0; i < elements.length; i++) {
-        const element = elements[i];
-        element.setAttribute('class', 'st4');
-      }
+      this.clickableService.removeSelection();
     }
     this.clickableService.sendClickableID(event.srcElement.id);
     this.clickableService.sendClickableType(event.srcElement.parentElement.id);

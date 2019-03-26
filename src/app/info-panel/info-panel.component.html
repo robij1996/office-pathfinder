@@ -2,7 +2,7 @@
 <div class="input-group mb-3">
     <input #searchPlace type="text" class="form-control" placeholder="Search"  >
     <div class="input-group-append">
-      <button class="btn btn-sm" type="button" id="button-addon2">Search</button>
+      <button class="btn btn-sm" type="button" id="button-addon2" (click)="searchClickable(searchPlace.value); searchPlace.value ='' ">Search</button>
     </div>
 </div>
 <p>ID: {{objectID}}</p>

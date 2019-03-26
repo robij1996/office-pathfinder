@@ -1,3 +1,4 @@
+import { ClickableSignedComponent } from './../clickable-signed/clickable-signed.component';
 import { ClickableService } from './../clickable.service';
 import { Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
@@ -20,5 +21,19 @@ export class InfoPanelComponent implements OnInit {
 
   ngOnInit() {
   }
+  searchClickable(inputText) {
+    this.clickableService.removeSelection();
+    const element = document.getElementById(inputText);
+    if (element == null) {
+      this.objectID = '';
+      this.objectType = '';
+    } else {
+      for(let i =0; i < element.children.length; i++) {
+        element.children.item(i).setAttribute('class', 'selected');
+      }
+    }
+
+  }
+
 
 }

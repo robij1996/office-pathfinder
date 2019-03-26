@@ -20,7 +20,13 @@ export class ClickableService {
   getClickableType(): Observable<string> {
     return this.ClickableType.asObservable();
   }
-
+  removeSelection() {
+    const elements = document.getElementsByClassName('selected');
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        element.setAttribute('class', 'st4');
+    }
+  }
 
   constructor() { }
 }
